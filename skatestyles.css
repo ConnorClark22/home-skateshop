@@ -84,9 +84,7 @@ body {
 /*----- END OF HOME PAGE STYLES -----*/
 
 
-/*----- ABOUT PAGE STYLES -----*/
-
-
+/*----- NAV BAR STYLES -----*/
 
 .navBar {
     display: grid;
@@ -112,6 +110,10 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+
+
+
+/*----- ABOUT PAGE STYLES -----*/
 
 .aboutTitle {
     font-family: 'syncopate';
@@ -144,6 +146,7 @@ body {
 .history {
     font-family: 'lato';
     font-size: 20px;
+    letter-spacing: 1px;
     background-color: black;
     color: rgb(238, 234, 229);
     text-align: center;
@@ -178,6 +181,7 @@ body {
 .history2 {
     font-family: 'lato';
     font-size: 20px;
+    letter-spacing: 1px;
     background-color: black;
     color: rgb(238, 234, 229);
     text-align: center;
@@ -185,6 +189,43 @@ body {
     padding: 1em;
 }
 
+/*----- END OF ABOUT PAGE STYLES -----*/
+
+/*----- TEAM PAGE STYLES -----*/
+
+.teamPhoto {
+    display: grid;
+    justify-content: center;
+}
+
+#teamHeader {
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+.teamInfo {
+    font-family: 'lato';
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: black;
+    color: rgb(238, 234, 229);
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+}
+
+.teamGallery {
+    display: grid;
+    justify-items: center;
+}
+
+#willBSflip {
+    max-width: 100%;
+}
+
+#brooksNoseslide {
+    max-width: 100%;
+}
 
 
 
