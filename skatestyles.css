@@ -97,6 +97,8 @@ body {
     background-color: black;
     font-family: 'syncopate';
     justify-content: center;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .topLink {
@@ -106,7 +108,7 @@ body {
 }
 
 .topLink:hover {
-    color: rgb(108, 108, 108);
+    color: rgb(230, 158, 58);
     font-weight: 700;
     cursor: pointer;
 }
@@ -115,14 +117,24 @@ body {
     font-family: 'syncopate';
     display: grid;
     text-align: center;
-    margin: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
     font-size: 30px;
     font-weight: 700;
 }
 
+.underTitle {
+    display: grid;
+    text-align: center;
+    font-family: 'lato';
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
 .aboutPhoto {
     display: grid;
-    justify-content: center;    
+    justify-content: center;
 }
 
 #shopView {
@@ -130,29 +142,48 @@ body {
 }
 
 .history {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'lato';
+    font-size: 20px;
+    background-color: black;
+    color: rgb(238, 234, 229);
     text-align: center;
+    margin: 2em;
+    padding: 1em;
 }
 
-.aboutCollage{
+.insideShop {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1em;
+    justify-items: center;
+}
+
+#inside {
+    max-width: 100%;
+    margin: 2em;
+}
+
+.aboutCollage {
+    display: grid;
+    justify-items: center;
 }
 
 #artWall {
     max-width: 100%;
-    grid-column: 1 / 3;
-    align-self: center;
 }
 
 #employees {
     max-width: 100%;
-    grid-column: 3 / 5;
-    justify-self: center;
+    margin: 2em;
 }
 
-
+.history2 {
+    font-family: 'lato';
+    font-size: 20px;
+    background-color: black;
+    color: rgb(238, 234, 229);
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+}
 
 
 
@@ -164,7 +195,7 @@ body {
 @media only screen and (min-width: 768px) {
 
 
-/*----- HOME PAGE MEDIA -----*/
+    /*----- HOME PAGE MEDIA -----*/
     #homeTitle {
         font-size: 40px;
     }
@@ -202,8 +233,31 @@ body {
         color: rgb(238, 234, 229);
         font-size: 25px;
     }
+
     /*----- END HOME PAGE MEDIA -----*/
-    
+
+
+    /*----- ABOUT PAGE MEDIA -----*/
+
+    .aboutCollage {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1em;
+    }
+
+    #artWall {
+        max-width: 100%;
+        grid-column: 1 / 3;
+        align-self: center;
+    }
+
+    #employees {
+        max-width: 100%;
+        grid-column: 3 / 5;
+        justify-self: center;
+    }
+
+
 
 
 }
