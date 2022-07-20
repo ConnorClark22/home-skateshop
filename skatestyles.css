@@ -181,6 +181,128 @@ body {
 
 /*----- END OF ABOUT PAGE STYLES -----*/
 
+
+
+/*----- BRANDS PAGE STYLES -----*/
+
+.productsPhoto {
+    display: grid;
+    justify-content: center;
+}
+
+#productsHeader {
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+.productInfo {
+    font-family: 'lato';
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: black;
+    color: rgb(238, 234, 229);
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+}
+
+.underInfo {
+    display: grid;
+    justify-content: center;
+}
+
+#dimeGear {
+    max-width: 100%;
+}
+
+.productCollage {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-rows: repeat(12, 1fr);
+    row-gap: 2em;
+    justify-items: center;
+}
+
+#vans {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#glassCase {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#polarTowel {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#thrasher {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+#FAgear {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+#FAboards {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+#antiHero {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+}
+
+#spitfire {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+}
+
+#trucks {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 9 / 10;
+}
+
+#polar {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 10 / 11;
+}
+
+#baker {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 11 / 12;
+}
+
+#shopCorner {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 12 / 13;
+}
+
+
+
+
+/*----- END OF BRANDS PAGE STYLES -----*/
+
+
+
+
 /*----- TEAM PAGE STYLES -----*/
 
 .teamPhoto {
@@ -207,7 +329,7 @@ body {
 .teamGallery {
     display: grid;
     grid-template-columns: 1em 1fr 1em;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     row-gap: 2em;
     justify-items: center;
 }
@@ -240,8 +362,37 @@ body {
     max-width: 100%;
     grid-column: 2 / 3;
     grid-row: 5 / 6;
+    align-self: center;
 }
 
+#zachFeeble {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    align-self: center;
+}
+
+#ryanBSflip {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+}
+
+#willKrook {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+    align-self: center;
+}
+
+#daltonSmith {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 9 / 10;
+}
+
+
+/*----- END OF TEAM PAGE STYLES -----*/
 
 
 
@@ -316,12 +467,101 @@ body {
     /*----- END ABOUT PAGE MEDIA -----*/
 
 
+
+    /*----- BRANDS PAGE MEDIA -----*/
+
+    .productCollage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 1em;
+        row-gap: 1em;
+        justify-items: center;
+    }
+
+    #vans {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #glassCase {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #polarTowel {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #thrasher {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #FAgear {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #FAboards {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #antiHero {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #spitfire {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    #trucks {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    #polar {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    #baker {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    #shopCorner {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+
+
+
+    /*----- END BRANDS PAGE MEDIA -----*/
+
+
     /*----- TEAM PAGE MEDIA -----*/
 
     .teamGallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         column-gap: 1em;
         row-gap: 1em;
     }
@@ -352,8 +592,33 @@ body {
 
     #cotie50 {
         max-width: 100%;
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
         grid-row: 3 / 4;
+    }
+
+    #zachFeeble {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #ryanBSflip {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #daltonSmith {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    #willKrook {
+        max-width: 100%;
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+        align-self: center;
     }
 
 
@@ -364,4 +629,174 @@ body {
 
 
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+
+
+    /*----- BRANDS PAGE MEDIA -----*/
+
+    .productCollage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 1em;
+        row-gap: 1em;
+        justify-items: center;
+    }
+
+    #vans {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #glassCase {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #polarTowel {
+        max-width: 100%;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    #thrasher {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #FAgear {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #FAboards {
+        max-width: 100%;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #antiHero {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #spitfire {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #trucks {
+        max-width: 100%;
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #polar {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #baker {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    #shopCorner {
+        max-width: 100%;
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+
+
+    /*----- END BRANDS PAGE MEDIA -----*/
+
+
+
+
+
+
+    /*----- TEAM PAGE MEDIA -----*/
+
+    .teamGallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    #willBSflip {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #zachAir {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #brooksNoseslide {
+        max-width: 100%;
+        grid-column: 3 / 4;
+        grid-row: 1 / 2
+    }
+
+    #cotie50 {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #daltonDrop {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #zachFeeble {
+        max-width: 100%;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #ryanBSflip {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #willKrook {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        align-self: center;
+    }
+
+    #daltonSmith {
+        max-width: 100%;
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+
+    /*----- END TEAM PAGE MEDIA -----*/
+
+
+
+
+
+
+
+
+}
