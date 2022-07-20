@@ -178,16 +178,6 @@ body {
     margin: 2em;
 }
 
-.history2 {
-    font-family: 'lato';
-    font-size: 20px;
-    letter-spacing: 1px;
-    background-color: black;
-    color: rgb(238, 234, 229);
-    text-align: center;
-    margin: 2em;
-    padding: 1em;
-}
 
 /*----- END OF ABOUT PAGE STYLES -----*/
 
@@ -216,15 +206,40 @@ body {
 
 .teamGallery {
     display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 2em;
     justify-items: center;
 }
 
 #willBSflip {
     max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 #brooksNoseslide {
     max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#zachAir {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#daltonDrop {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+#cotie50 {
+    max-width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
 }
 
 
@@ -297,6 +312,50 @@ body {
         grid-column: 3 / 5;
         justify-self: center;
     }
+
+    /*----- END ABOUT PAGE MEDIA -----*/
+
+
+    /*----- TEAM PAGE MEDIA -----*/
+
+    .teamGallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    #willBSflip {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #brooksNoseslide {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2
+    }
+
+    #zachAir {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #daltonDrop {
+        max-width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #cotie50 {
+        max-width: 100%;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
 
 
 
