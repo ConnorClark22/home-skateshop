@@ -95,8 +95,6 @@ body {
     background-color: black;
     font-family: 'syncopate';
     justify-content: center;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 .topLink {
@@ -106,6 +104,31 @@ body {
 }
 
 .topLink:hover {
+    color: rgb(230, 158, 58);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footNav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / 4;
+    padding: 1em;
+    justify-items: center;
+    background-color: black;
+    font-family: 'syncopate';
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.bottomLink {
+    text-decoration: none;
+    color: rgb(238, 234, 229);
+    font-size: 12px;
+}
+
+.bottomLink:hover {
     color: rgb(230, 158, 58);
     font-weight: 700;
     cursor: pointer;
@@ -394,10 +417,126 @@ body {
 
 /*----- END OF TEAM PAGE STYLES -----*/
 
+/*----- CONTACT PAGE STYLES -----*/
+
+.contactInfo {
+    font-family: 'lato';
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+}
+
+.shopLogo {
+    display: grid;
+    justify-content: center;
+}
+
+#logo {
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+#overlay {
+    font-family: 'lato';    
+}
+
+form {
+    max-width: 550px;
+    width: 90%;
+    margin: 17vh auto 0 auto;
+    padding: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgb(230, 158, 58);
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(230, 158, 58);
+}
+
+.center {
+    text-align: center;
+}
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    font-family: 'lato';
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error {
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success {
+    color: green;
+}
+
+
+
+/*----- END CONTACT PAGE STYLES -----*/
+
+
+/*----- RETURN PAGE STYLES -----*/
+
+.returnInfo {
+    font-family: 'lato';
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+
+}
+
+/*----- END RETURN PAGE STYLES -----*/
+
+/*----- PRIVACY PAGE STYLES -----*/
+
+.privacyInfo {
+    font-family: 'lato';
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+
+}
 
 
 
 
+/*----- END PRIVACY PAGE STYLES -----*/
 
 @media only screen and (min-width: 768px) {
 
@@ -463,6 +602,13 @@ body {
         grid-column: 3 / 5;
         justify-self: center;
     }
+
+    .bottomLink {
+        text-decoration: none;
+        color: rgb(238, 234, 229);
+        font-size: 20px;
+    }
+    
 
     /*----- END ABOUT PAGE MEDIA -----*/
 

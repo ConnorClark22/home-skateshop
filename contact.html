@@ -25,11 +25,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
 
 
-    <title>Team | Home Skateshop</title>
+
+    <title>Contact Us | Home Skateshop</title>
+
 </head>
 
 
-<body class="teamBody">
+
+<body>
 
     <nav class="navBar">
         <a class="topLink" href="index.html">HOME</a>
@@ -38,32 +41,83 @@
         <a class="topLink" href="team.html">TEAM</a>
     </nav>
 
-    <section class="teamPhoto">
-        <img id="teamHeader" src="photos/teamPhoto.jpg" alt="cotieHoldingBoard">
+    <header class="aboutTitle">
+        HOME SKATESHOP
+    </header>
+
+    <section class="underTitle">
+        <h2>
+            CONTACT US
+        </h2>
     </section>
 
-    <section class="teamInfo">
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm();">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your email">
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your message" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+
+            </div>
+
+
+
+
+
+        </form>
+
+
+    </div>
+
+    <section class="contactInfo">
         <p>
-            One way to keep a local scene thriving is to support the skaters who are supporting your shop.
-            Like most skate shops today, Home has a team of local rippers.
-            Hornung says, <i>“There're about a dozen kids on the team right now. We basically look for attitude and
-                skill,
-                you know? It's pretty mellow.”</i>
+            Contact via email <br>
+            homeskateshop@gmail.com
         </p>
+
+        <p>
+            By phone during business hours:<br>
+            502-456-6911
+        </p>
+
+        <p>
+            Current Business Hours:<br>
+            Monday - Saturday: 11-7pm<br>
+            Sunday: 1-5pm
+        </p>
+
+        <p>
+            Address:<br>
+            Home Skateshop<br>
+            1363 Bardstown Rd.<br>
+            Louisville KY 40204<br>
+        </p>
+
+
     </section>
 
-    <section class="teamGallery">
-        <img id="willBSflip" src="photos/willBSflip.jpg" alt="willBacksideFlip">
-        <img id="brooksNoseslide" src="photos/brooksNoseslide.jpg" alt="BrooksNoseslide">
-        <img id="zachAir" src="photos/zachAir.jpg" alt="ZachFrontsideAir">
-        <img id="daltonDrop" src="photos/daltonDrop.jpg" alt="DaltonTailDrop">
-        <img id="cotie50" src="photos/cotie50.jpg" alt="Cotie50-50">
-        <img id="zachFeeble" src="photos/zachFeeble.jpg" alt="ZachFeeble">
-        <img id="ryanBSflip" src="photos/ryanBSflip.jpg" alt="RyanBacksideFlip">
-        <img id="willKrook" src="photos/willKrook.jpg" alt="WillKrookedGrind">
-        <img id="daltonSmith" src="photos/daltonSmith.jpg" alt="DaltonSmithGrind">
-
+    <section class="shopLogo">
+        <img id="logo" src="photos/logo.png" alt="shopLogo">
     </section>
+
+
+
+
+
+
+
 
     <footer>
         <nav class="footNav">
@@ -73,6 +127,7 @@
         </nav>
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 
