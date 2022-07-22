@@ -4,6 +4,11 @@ body {
     ;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
 /*----- HOME PAGE STYLES -----*/
 
 #homeTitle {
@@ -85,22 +90,106 @@ body {
 
 
 /*----- NAV BAR STYLES -----*/
+.bigNav {
+    display: none;
+}
 
 .navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'syncopate';
+    background-color: black;
+}
+
+.logo {
+    color: rgb(238, 234, 229);
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navLinks {
+    position: absolute;
+    right: 0px;
+    height: 40vh;
+    top: 8vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 25%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+
+.navLinks li {
+    opacity: 0;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    color: rgb(238, 234, 229);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+
+.burger div {
+   width: 25px;
+   height: 2px;
+   background-color: rgb(238, 234, 229);
+   margin: 5px;
+}
+
+
+
+/*.navBar {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: 1 / 5;
+    grid-template-columns: 1fr 1fr;
     padding: 1em;
+    margin: 1em;
     justify-items: center;
     background-color: black;
     font-family: 'syncopate';
     justify-content: center;
 }
 
+
 .topLink {
     text-decoration: none;
     color: rgb(238, 234, 229);
     font-size: 15px;
+
 }
 
 .topLink:hover {
@@ -108,6 +197,7 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+*/
 
 .footNav {
     display: grid;
@@ -138,6 +228,7 @@ body {
 
 /*----- ABOUT PAGE STYLES -----*/
 
+
 .aboutTitle {
     font-family: 'syncopate';
     display: grid;
@@ -149,12 +240,19 @@ body {
     font-weight: 700;
 }
 
+.aboutTitle {
+    display: none;
+}
+
+
+
 .underTitle {
     display: grid;
     text-align: center;
     font-family: 'lato';
     font-size: 10px;
     letter-spacing: 3px;
+    margin: 2em;
 }
 
 .aboutPhoto {
@@ -439,7 +537,7 @@ body {
 }
 
 #overlay {
-    font-family: 'lato';    
+    font-family: 'lato';
 }
 
 form {
@@ -456,7 +554,8 @@ label {
     margin: 20px 0;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -466,7 +565,8 @@ input, textarea {
     border-bottom: 1px solid black;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,
+textarea:focus {
     border-bottom: 1px solid rgb(230, 158, 58);
 }
 
@@ -481,6 +581,7 @@ textarea::-webkit-scrollbar-thumb {
 .center {
     text-align: center;
 }
+
 input[type="submit"] {
     margin-top: 30px;
     width: 90%;
@@ -574,16 +675,59 @@ input[type="submit"] {
         padding-bottom: 2em;
     }
 
+
+    /*----- END HOME PAGE MEDIA -----*/
+
+
+    /*----- NAV MEDIA -----*/
+    .navBar {
+        display: none;
+    }
+
+   .burger {
+        display: none;
+    }
+
+
+    
+    
+
+    .bigNav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column: 1 / 5;
+        padding: 1em;
+        justify-items: center;
+        background-color: black;
+        font-family: 'syncopate';
+        justify-content: center;
+    }
+    
     .topLink {
         text-decoration: none;
         color: rgb(238, 234, 229);
         font-size: 25px;
     }
+    
+    .topLink:hover {
+        color: rgb(230, 158, 58);
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
 
-    /*----- END HOME PAGE MEDIA -----*/
+
+
+    /*----- END NAV MEDIA -----*/
+
 
 
     /*----- ABOUT PAGE MEDIA -----*/
+
+    .aboutTitle {
+        display: grid;
+    }
+
 
     .aboutCollage {
         display: grid;
@@ -608,7 +752,7 @@ input[type="submit"] {
         color: rgb(238, 234, 229);
         font-size: 20px;
     }
-    
+
 
     /*----- END ABOUT PAGE MEDIA -----*/
 
