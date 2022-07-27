@@ -31,7 +31,7 @@ function validateForm() {
     }
 
     if(!errorFlag){
-        success.innerText = "Message Sent!";
+        success.innerText = "Thanks " + nameInput.value + ", your message was sent!";
     }
 }
 
